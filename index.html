@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="JSON.json"></script>
+    <title>CodeReview 3</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo" class="logo-header1">
+        <div class="hide-phone, hide-tablet">
+            <!--header2 needs to be in a div for it to become hidden-->
+            <a href="https://www.codefactory.wien">
+                <!--picture and text are both links to the article page-->
+                <img src="img/banner.png" alt="Advertisment" id="logo-ad" class="hide-phone, hide-tablet, logo-header2">
+            </a>
+        </div>
+    </header>
+    <nav class="flex-row">
+        <ul>
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <li>Team</li>
+        </ul>
+    </nav>
+    <!--main content of the webpage-->
+
+    <div>
+        <!--contains the background image with a grey backgorund including the 4 forms, the button and the output -->
+
+        <div>
+
+            <h1>Car insurance</h1>
+        </div>
+        <div>
+            <!--title of the box-->
+            <h1>Great coverage begins
+                with a custom quote</h1>
+            <div>
+                <!--creates the flex enviroment for the forms-->
+                <div>
+                    <form class="form">
+                        <label for="yname">Your name:</label><br>
+                        <input type="text" id="yname" name="yname"><br>
+                    </form>
+                </div>
+                <div>
+                    <form class="form">
+                        <label for="age">Age:</label><br>
+                        <input type="number" id="age" name="age"><br>
+                    </form>
+                </div>
+                <div>
+                    <form class="form">
+                        <label for="country">Country:</label><br>
+                        <select id="country" name="country">
+                          <option value="Austria">Austria</option>
+                          <option value="Hungary">Hungary</option>
+                          <option value="Greece">Greece</option>
+                        </select>
+                    </form>
+                </div>
+                <div>
+                    <form class="form">
+                        <label for="hpOfCar">Horsepower of your car:</label><br>
+                        <input type="number" id="hpOfCar" name="hpOfCar"><br>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <button id="button" type="button">Calculate</button>
+            <br>
+            <div id="result"> <!--java script output-->
+
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="flex-row, nav-footer">
+        <ul>
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <li>Team</li>
+        </ul>
+    </nav>
+    <footer>
+        <br>
+        <img src="img/logo-inv.png" alt="Logo" class="logo-footer">
+        <p>Aaron Bumberger - CodeFactory 2020</p>
+        <br>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
