@@ -1,0 +1,308 @@
+//repeating functions that are applied to multiple classes 
+.flex-row{      //general flex row rule
+    display: flex;
+    flex-flow: row wrap;
+}
+body{
+    margin: 0em;
+    background-color: #cccccc;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@media screen and (min-width: 480px) and (max-width: 879px){
+    .hide-content{
+        display: none;
+    }
+    header{
+        position: relative;
+        top: 0;
+        top: 0em;
+        background-color: #ffecec ;  //dark wine red
+        width: 100%;
+        height: 7em;    //increase to 10em from 8em
+    }
+    .logo-header1{
+        margin-top: 2em;
+        margin-left: 3em;
+        scale: 120%;    //larger for bigger screen
+    }
+    nav{        //applied flex row rule
+        background-color: #8e1818;
+        width: 100%;
+        height: 3.5em;
+        position: relative; //nav bar seems to move down due to scaling and needs to be repositioned
+        bottom: 1em;
+    }
+    li{
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+        display: inline;
+        color: white;
+        font-size: 1.5em;    //increse size for tablet from xxl to xxxl
+    }
+    .title-text{    //prevent the exposure or creation of a gap to the top
+        margin-top: -3em;
+        margin-left: 2em;
+        color: white;
+    }
+    .background-img{
+        margin-top: 0em;
+        background-image: url(img/traffic-332857_1920.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-height: 31em;
+    }
+    .flex-form{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-left: 3em;
+        margin-right: 3em;
+        
+    }
+    .background-form{ //add a height 
+        background: rgba(245, 245, 245, 0.77);
+        border-style: solid;
+        border-color: black;
+        height: 30em;
+        margin: 0em 1.5em;
+    }
+    .background-form>h1{
+        text-align: center;
+    }
+    .form-width{
+        width: 9em;
+    }
+    .select-width{//selector seems to be a bit smaller then form-width and needs to be aligned 
+        width:  9.5em;
+    }
+    #button{
+        width: 7em;
+        align-self: center;
+        background-color: #17a33c;
+        border-radius: 4px;
+        color: white;
+        font-size: large;
+    }
+    #result{    //output of the java script calculations
+        font-size: large;
+        align-self: center;
+        color: #17a33c;
+    }
+    .text{ 
+        text-align: center;
+    }
+    #column{
+        justify-content: space-around; //space between the two columns
+        background-color: white;
+        position: relative;
+        top: 17em;
+    }
+    .flex-column{   //general flex column rule
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .column-text{
+        position: relative;
+        top: 1em;
+        border-style: solid;
+        border-color: black;
+        margin-top: 1em;
+        margin-bottom: 8em; //need this to keep the bottom white
+    }
+    .column-text>p{
+        margin-left: 1em;
+        margin-right: 2em;
+    }
+    .top{
+        margin-left: 1em;
+        margin-top: -1em;
+    }
+    .column-text> h4 {
+        margin-left: 1em;
+        margin-bottom: 1em;
+        color: #1e75f7;
+    }
+    hr{
+        opacity: 0.05;
+        margin: 0 2em;
+        border-radius: 20px;
+    }
+    span{
+        color: cyan;
+    }
+    .column-text>h5{
+        font-weight: bold;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+    .nav-footer{
+        position: relative;
+        height: 2em;
+        background-color: black;
+        bottom: -9em;
+    }
+    .logo-footer{
+        float: right;
+        margin-right: 2em;
+    }
+    footer{
+        position: relative;
+        background-color: black;
+        bottom: -9em;
+        color: white;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 880px){
+    header{
+        position: static;
+        top: 0;
+        top: 0em;
+        background-color: #ffecec ;  //dark wine red
+        width: 100%;
+        height: 10em;    //increase to 10em from 8em
+    }
+    .logo-header1{
+        margin-top: 3em;
+        margin-left: 3em;
+        scale: 120%;    //larger for bigger screen
+    }
+    .logo-header2{  //first time being displayed
+        position: relative; //positioning the image on the top right corner
+        float: right;
+        margin-right: 3em;  //distance to the right
+        bottom: 3em;
+    }
+    nav{        //applied flex row rule
+        background-color: #8e1818;
+        width: 100%;
+        height: 3.5em;
+        position: relative; //nav bar seems to move down due to scaling and needs to be repositioned
+        bottom: 1em;
+    }
+    li{
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+        display: inline;
+        color: white;
+        font-size: 1.5em;    //increse size for tablet from xxl to xxxl
+    }
+    .title-text{    //prevent the exposure or creation of a gap to the top
+        margin-top: -3em;
+        margin-left: 2em;
+        color: white;
+    }
+    .background-img{
+        margin-top: 0em;
+        background-image: url(img/traffic-332857_1920.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-height: 27.5em;
+    }
+    .flex-form{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-left: 10em;
+        margin-right: 10em;
+        
+    }
+    .background-form{ //add a height 
+        background: rgba(245, 245, 245, 0.77);
+        border-style: solid;
+        border-color: black;
+        height: 23em;
+        margin: 0em 3em;
+    }
+    .background-form>h1{
+        text-align: center;
+    }
+    .form-width{
+        width: 15em;
+        font-size: large;
+    }
+    .select-width{//selector seems to be a bit smaller then form-width and needs to be aligned 
+        width:  15.3em;
+        font-size: large;
+    }
+    #button{
+        width: 15em;
+        align-self: center;
+        background-color: #17a33c;
+        border-radius: 4px;
+        color: white;
+        font-size: large;
+    }
+    #result{    //output of the java script calculations
+        font-size: large;
+        align-self: center;
+        color: #17a33c;
+    }
+    .text{ 
+        text-align: center;
+    }
+    #column{
+        justify-content: space-around; //space between the two columns
+        background-color: white;
+        position: relative;
+        top: 13em;
+    }
+    .flex-column{   //general flex column rule
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .column-text{
+        position: relative;
+        top: 1em;
+        border-style: solid;
+        border-color: black;
+        margin-top: 2em;
+        margin-bottom: 8em; //need this to keep the bottom white
+    }
+    .column-text>p{
+        margin-left: 1em;
+        margin-right: 2em;
+    }
+    .top{
+        margin-left: 1em;
+        margin-top: -1em;
+    }
+    .column-text> h4 {
+        margin-left: 1em;
+        margin-bottom: 1em;
+        color: #1e75f7;
+    }
+    hr{
+        opacity: 0.05;
+        margin: 0 2em;
+        border-radius: 20px;
+    }
+    span{
+        color: cyan;
+    }
+    .column-text>h5{
+        font-weight: bold;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+    .nav-footer{
+        position: relative;
+        height: 2em;
+        background-color: black;
+        bottom: -9em;
+    }
+    .logo-footer{
+        float: right;
+        margin-right: 2em;
+    }
+    footer{
+        position: relative;
+        background-color: black;
+        bottom: -9em;
+        color: white;
+        text-align: center;
+    }
+}
