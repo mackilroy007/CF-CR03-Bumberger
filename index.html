@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <script src="JSON.json"></script>
     <title>CodeReview 3</title>
 </head>
@@ -11,11 +12,11 @@
 <body>
     <header>
         <img src="img/logo.png" alt="Logo" class="logo-header1">
-        <div class="hide-phone, hide-tablet">
+        <div class="hide-content">
             <!--header2 needs to be in a div for it to become hidden-->
             <a href="https://www.codefactory.wien">
                 <!--picture and text are both links to the article page-->
-                <img src="img/banner.png" alt="Advertisment" id="logo-ad" class="hide-phone, hide-tablet, logo-header2">
+                <img src="img/banner.png" alt="Advertisment" id="logo-ad" class="hide-content, logo-header2">
             </a>
         </div>
     </header>
@@ -29,58 +30,106 @@
     </nav>
     <!--main content of the webpage-->
 
-    <div>
-        <!--contains the background image with a grey backgorund including the 4 forms, the button and the output -->
-
-        <div>
-
+    <!--contains the background image with a grey backgorund including the 4 forms, the button and the output -->
+    <div class="background-img">
+        <!--background image-->
+        <div class="title-text">
+            <br>
             <h1>Car insurance</h1>
         </div>
-        <div>
+        <div class="background-form">
             <!--title of the box-->
-            <h1>Great coverage begins
+            <h1>Great coverage begins <br>
                 with a custom quote</h1>
-            <div>
+            <div class="flex-form">
                 <!--creates the flex enviroment for the forms-->
                 <div>
-                    <form class="form">
+                    <form>
                         <label for="yname">Your name:</label><br>
-                        <input type="text" id="yname" name="yname"><br>
+                        <input type="text" id="yname" name="yname" class="form-width"><br>
                     </form>
                 </div>
                 <div>
-                    <form class="form">
+                    <form>
                         <label for="age">Age:</label><br>
-                        <input type="number" id="age" name="age"><br>
+                        <input type="number" id="age" name="age" class="form-width"><br>
                     </form>
                 </div>
+            </div>
+            <br>
+            <div class="flex-form">
                 <div>
-                    <form class="form">
+                    <form>
                         <label for="country">Country:</label><br>
-                        <select id="country" name="country">
-                          <option value="Austria">Austria</option>
-                          <option value="Hungary">Hungary</option>
-                          <option value="Greece">Greece</option>
+                        <select id="country" name="country" class="select-width">
+                            <option value="Austria">Austria</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Greece">Greece</option>
                         </select>
                     </form>
                 </div>
                 <div>
-                    <form class="form">
+                    <form>
                         <label for="hpOfCar">Horsepower of your car:</label><br>
-                        <input type="number" id="hpOfCar" name="hpOfCar"><br>
+                        <input type="number" id="hpOfCar" name="hpOfCar" class="form-width"><br>
                     </form>
                 </div>
             </div>
             <br>
-            <button id="button" type="button">Calculate</button>
             <br>
-            <div id="result"> <!--java script output-->
+            <div class="flex-column">
+                <button id="button" type="button">Calculate</button>
 
+                <div id="result">
+                    <!--java script output-->
+                </div>
             </div>
+            <br>
+        </div>
+        <div class="text">
+            <!--text after the content output written over the grey background-->
+            <br>
+            <h2> Uncomplicated car coverage</h2>
+            <p>Understanding your coverage option shouldn't be so hard. <br>
+                We'll guide you though available coverage types, <br>
+                starting with who and what is covered.</p>
+            <br>
+            <br>
         </div>
     </div>
 
+    <!--background image and grey with a grey background finished-->
 
+    <div id="column" class="flex-row">
+        <!--contains the 2 columns-->
+        <div class="flex-column, column-text">
+            <!--column 1 -->
+            <h4>What comes standard</h4>
+            <p class="top">The coverage you need</p>
+
+            <p> <span>✔</span> Bodily Injury Liablity</p>
+            <p> <span>✔</span> Property Damage</p>
+            <p> <span>✔</span> Medical Payments</p>
+            <hr>
+            <h5>Benefits</h5>
+            <p class="top">12-month rate guarantee | 24/7 customer service <br>
+                | Lifetime Repair Guarantee</p>
+        </div>
+        <div class="flex-column, column-text">
+            <!--Column 2 -->
+            <h4>Add-on protection & coverage</h4>
+            <p class="top">For more peace of mind</p>
+            
+            <p><span>✔</span> Better Car Replacement</p>
+            <p><span>✔</span> Towing & Labore</p>
+            <p><span>✔</span> Rental Car CoverageEarned</p>
+            <hr>
+            <h5>Benefits</h5>
+            <p class="top">Accident Forgiveness&#185; | New Car Replacement&trade;</p>
+        </div>
+    </div>
+    <br>
+    <br>
     <nav class="flex-row, nav-footer">
         <ul>
             <a href="index.html">
@@ -92,6 +141,8 @@
     <footer>
         <br>
         <img src="img/logo-inv.png" alt="Logo" class="logo-footer">
+        <br>
+        <br>
         <p>Aaron Bumberger - CodeFactory 2020</p>
         <br>
     </footer>
