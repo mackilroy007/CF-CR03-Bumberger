@@ -15,15 +15,15 @@ function calculateInsurance() {
     //using Math.round to round up the highest int if the number has decimal places
     if (country == "Austria" && age >= 18) { //Austria : insurance = horse_power x 100 / age   + 50;
         var calcA = (Math.round(hpOfCar * 100 / (age)) + 50); //seperating the calculation from the display for easier access
-        result.innerHTML = "<br>" + displayName + ", our insurance rate offer will be " + calcA.toLocaleString() +" €";
+        result.innerHTML = "<br>" + displayName + ", our insurance rate offer will be " + calcA.toLocaleString() +" € <br>";
         // console.log(result);
     } else if (country == "Hungary" && age >= 18) {//Hungary: insurance = horse_power x 120 / age  + 100;
         var calcH = ((Math.round(hpOfCar * 120 / (age) + 100))*huf);
-        result.innerHTML = "<br>" + displayName + ", our insurance rate offer will be " + calcH.toLocaleString() + " Ft";
+        result.innerHTML = "<br>" + displayName + ", our insurance rate offer will be " + calcH.toLocaleString() + " Ft <br>";
         // console.log(result);
     } else if (country == "Greece" && age >= 18) {    //Greece: insurance = horse_power x 150 / (age+3)  + 50;
         var calcG = (Math.round(hpOfCar * 150 / (age+3) + 50));
-        result.innerHTML = "<br>" +displayName + ", our insurance rate offer will be " + calcG.toLocaleString() +" €";
+        result.innerHTML = "<br>" +displayName + ", our insurance rate offer will be " + calcG.toLocaleString() +" € <br>";
         // console.log(result);
     } else {
         result.innerHTML = `<br>We only offer insurance for individuals who are 18 or older.`
@@ -32,6 +32,3 @@ function calculateInsurance() {
 }
 document.getElementById("button").addEventListener("click",calculateInsurance,false);
 
-//linking the JSON file
-var employees = JSON.parse(teamMembers);
-console.table(teamMembers);

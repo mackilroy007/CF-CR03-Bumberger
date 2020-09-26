@@ -56,7 +56,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-height: 31em;
+    max-height: 27em;
   }
   .flex-form {
     display: -webkit-box;
@@ -76,7 +76,7 @@ body {
     background: rgba(245, 245, 245, 0.77);
     border-style: solid;
     border-color: black;
-    height: 30em;
+    height: 24em;
     margin: 0em 1.5em;
   }
   .background-form > h1 {
@@ -128,7 +128,8 @@ body {
     position: relative;
     top: 1em;
     border-style: solid;
-    border-color: black;
+    border-color: #cccccc;
+    border-top-color: black;
     margin-top: 1em;
     margin-bottom: 8em;
   }
@@ -242,7 +243,7 @@ body {
     background: rgba(245, 245, 245, 0.77);
     border-style: solid;
     border-color: black;
-    height: 23em;
+    height: 24em;
     margin: 0em 3em;
   }
   .background-form > h1 {
@@ -281,7 +282,7 @@ body {
         justify-content: space-around;
     background-color: white;
     position: relative;
-    top: 13em;
+    top: 16em;
   }
   .flex-column {
     display: -webkit-box;
@@ -296,7 +297,8 @@ body {
     position: relative;
     top: 1em;
     border-style: solid;
-    border-color: black;
+    border-color: #cccccc;
+    border-top-color: black;
     margin-top: 2em;
     margin-bottom: 8em;
   }
@@ -343,5 +345,27 @@ body {
     color: white;
     text-align: center;
   }
+}
+
+.team-img {
+  height: 14em;
+  width: auto;
+}
+
+#team-members {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.member {
+  border: solid;
+  border-color: white;
+  border-top-color: cyan;
+  background-color: rgba(252, 252, 252, 0.8);
+}
+
+.member > p {
+  margin-left: 1em;
 }
 /*# sourceMappingURL=style.css.map */
